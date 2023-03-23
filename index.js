@@ -30,4 +30,9 @@ server.use((req, res, next) => {
 
 const apiRouter = require('./api');
 server.use('/api', apiRouter);
-   
+server.get("/", async (req, res) => {
+  res.send({
+    message:
+      'Change the url to api/posts, api/users or api/tags'
+  });
+});   
