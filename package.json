@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "seed:dev": "nodemon ./db/seed.js",
-    "start": "node index.js",
-    "start:dev": "nodemon index.js",
-    "build": "npm install --prefix client && npm run build --prefix client "
+    "start": "node ./db/seed && node index.js",
+    "start:dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
